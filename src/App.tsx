@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import AppLayout from './app/layout/AppLayout';
 import AppRoutes from './app/routes';
 import { IronLabSessionProvider } from './state/IronLabSession';
@@ -11,6 +12,7 @@ export default function App() {
           <AppRoutes />
         </AppLayout>
       </IronLabSessionProvider>
+      <Analytics />
     </LabAudioProvider>
   );
 }
